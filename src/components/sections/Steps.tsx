@@ -4,7 +4,7 @@ const STEPS = [
   {
     num: "01 — install",
     title: "One package, no services",
-    code: `<span class="tt-d">$</span> pip install slomo`,
+    code: `<span class="tt-d">$</span> pip install slomo\n<span class="tt-d"># macOS</span>\n<span class="tt-d">$</span> brew install apilens/slomo/slomo`,
     note: "Python 3.12+. The recorder's hot path is stdlib-only.",
   },
   {
