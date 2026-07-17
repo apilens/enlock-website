@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #0a0a0b;
+  --color-panel: #0e0e10;
+  --color-ink: #ededf0;
+  --color-mut: #a0a0ab;
+  --color-fnt: #62626c;
+  --color-acc: #34d399;
+  --color-amb: #d4b262;
+  --color-rd: #e07a7a;
+  --color-blu: #7aa7d9;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jbmono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(52 211 153 / 0.22);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.term-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  background: var(--color-acc);
+  vertical-align: -2px;
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .term-cursor {
+    animation: none;
+  }
+}
+
+/* terminal syntax colors (lines are trusted, hand-written HTML) */
+.tt-p { color: var(--color-fnt); }
+.tt-c { color: var(--color-ink); }
+.tt-g { color: var(--color-acc); }
+.tt-a { color: var(--color-amb); }
+.tt-r { color: var(--color-rd); }
+.tt-bl { color: var(--color-blu); }
+.tt-d { color: var(--color-mut); }
