@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "slomo — Stop reproducing bugs. Replay them.",
     description:
       "The black-box flight recorder for Python. Record locally, replay from your terminal.",
-    url: "https://apilens.github.io/slomo-landing/",
+    url: "https://slomo.dev/",
     siteName: "slomo",
     type: "website",
   },
