@@ -54,11 +54,11 @@ a { color: inherit; text-decoration: none; }
 /* Nav */
 .nav { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 590; font-size: 17px; letter-spacing: -.02em; }
-/* Wordmark: lowercase; the n is the one brand colour, heavier, a touch larger, leaning left */
+.brand { display: flex; align-items: center; gap: 11px; font-weight: 590; font-size: 21px; letter-spacing: -.02em; }
+/* Wordmark: lowercase; the n is the one brand colour, heavier and a touch larger */
 .wm { font-weight: 590; letter-spacing: -.03em; }
-.wm b { color: var(--brand); font-weight: 800; font-size: 1.14em; line-height: 0; display: inline-block; transform: skewX(14deg); transform-origin: 50% 50%; margin: 0 .045em 0 .035em; }
-.brand img, .brand svg { width: 22px; height: 22px; }
+.wm b { color: var(--brand); font-weight: 800; font-size: 1.12em; line-height: 0; margin: 0 .01em; }
+.brand img, .brand svg { width: 30px; height: 30px; border-radius: 8px; }
 .nav-links { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--t2); }
 .nav-links a { padding: 6px 12px; border-radius: 999px; transition: color .15s; }
 .nav-links a:hover, .nav-links a[aria-current] { color: var(--tx); }
