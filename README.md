@@ -1,29 +1,30 @@
-# slomo — landing page
+# Slomo — website
 
-Landing page for **slomo**, the black-box flight recorder for Python.
+Landing page, Privacy Policy and Terms & Conditions for **Slomo**, the offline iPhone vault for ID cards and documents.
 
-> Stop reproducing bugs. Replay them.
+Live: https://slomo.dev
 
-Built with **Next.js 16** (App Router, static export), **TypeScript**, **Tailwind CSS v4**, and **motion** for scroll animations. Deployed to GitHub Pages via GitHub Actions on every push to `main`.
+| Page | File |
+|---|---|
+| Landing | `index.html` |
+| Privacy Policy | `privacy.html` |
+| Terms & Conditions | `terms.html` |
 
-## Development
+Plain HTML/CSS/JS, no build step. Monochrome design (dark by default, light toggle) in the spirit of linear.app: one ink colour, greys, hairlines.
 
-```bash
-npm install
-npm run dev        # http://localhost:3000/slomo-landing
+## Run locally
+
+```sh
+python3 -m http.server 8000
 ```
 
-## Production build
+## Deploy
 
-```bash
-npm run build      # static export to out/
-```
+Hosted on Vercel at slomo.dev as a static site (no build step, see `vercel.json`). A copy also deploys to GitHub Pages on every push to `main`.
 
-## Structure
+Contact: hello@slomo.dev (general), support@slomo.dev (support and privacy).
 
-- `src/app/` — layout (fonts via `next/font`, Metadata API), page, global styles, favicon
-- `src/components/` — `Nav`, `Starfield` (canvas), `Terminal` (scene-based typing demo), `Reveal` (motion), `CopyPip`, `StarCount` (live GitHub stars)
-- `src/components/sections/` — `Hero`, `Features`, `Statement`, `Steps`, `Contribute`, `FinalCta`, `Footer`
-- `.github/workflows/deploy.yml` — build + deploy to GitHub Pages
+## Before the App Store launch
 
-Docs links currently point to `#` — they'll be wired up when the documentation site ships.
+- Swap the "Coming soon" App Store buttons (`index.html`, two places) for the real App Store link.
+- Use `privacy.html` as the Privacy Policy URL in App Store Connect, and declare **Data Not Collected** in App Privacy.

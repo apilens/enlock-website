@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#08090A">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Slomo Privacy Policy</title>
+  <meta name="description" content="Slomo collects no personal data. Everything you store stays on your iPhone.">
+  <link rel="canonical" href="https://slomo.dev/privacy">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;510;590;650&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>try{var t=localStorage.getItem('slomo-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Slomo home"><img src="assets/icon.svg" alt="" width="22" height="22">Slomo</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="./#scan">Features</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-btn" aria-label="Switch light or dark"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="./#download">Get Slomo</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="legal-hero">
+    <div class="wrap">
+      <div class="kicker">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p>The short version: Slomo doesn't collect your data. It has no servers to send it to.</p>
+      <div class="meta"><span>Effective 1 November 2026</span><span>Applies to the Slomo iOS app and this website</span></div>
+    </div>
+  </div>
+
+  <div class="wrap legal">
+    <aside class="toc" aria-label="On this page">
+      <b>On this page</b>
+      <a href="#summary">Summary</a>
+      <a href="#collect">What we collect</a>
+      <a href="#device">Data on your device</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#sharing">Sharing &amp; backups</a>
+      <a href="#security">Security</a>
+      <a href="#retention">Retention &amp; deletion</a>
+      <a href="#children">Children</a>
+      <a href="#rights">Your rights</a>
+      <a href="#website">This website</a>
+      <a href="#changes">Changes</a>
+      <a href="#contact">Contact</a>
+    </aside>
+
+    <article class="prose">
+      <div class="tldr" id="summary">
+        <h2>Summary</h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Slomo makes no network connections. There's no account, sync, analytics, advertising or crash reporting.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Everything you add (scans, card details, people, tags) is stored only on your iPhone.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Text recognition runs on your device through Apple's Vision framework.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Data leaves your phone only when you share it or save a backup, and you choose where it goes.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>We can't see, recover or hand over your data, because we never have it.</li>
+        </ul>
+      </div>
+
+      <h2 id="collect">1. Information we collect</h2>
+      <p><strong>None.</strong> Slomo (“the app”, “we”, “us”) doesn't collect, transmit, sell or share any personal information. The app contains no analytics, advertising or tracking SDKs, and it doesn't require or offer an account.</p>
+      <p>Apple may give developers aggregated, anonymous App Store statistics such as download counts, and crash reports from people who have opted in to share them with developers in iOS Settings. Apple controls these under the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>, and you can turn them off at any time.</p>
+
+      <h2 id="device">2. Data stored on your device</h2>
+      <p>To work, the app stores what you put into it locally on your iPhone:</p>
+      <table class="table">
+        <thead><tr><th>Data</th><th>Where it lives</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Items and fields (for example, card numbers, names, dates, notes, tags)</td><td>The app's private storage on your iPhone</td><td>Showing, searching and copying your items</td></tr>
+          <tr><td>Scanned and imported images, PDFs</td><td>The app's private storage on your iPhone</td><td>Showing and sharing the original document</td></tr>
+          <tr><td>People (names, relationship)</td><td>The app's private storage on your iPhone</td><td>Grouping items by person</td></tr>
+          <tr><td>PIN</td><td>iOS Keychain, “this device only”, stored as a salted PBKDF2 hash rather than the PIN itself</td><td>Unlocking the app</td></tr>
+          <tr><td>Recovery key</td><td>iOS Keychain, “this device only”</td><td>Opening encrypted backups and resetting your PIN</td></tr>
+          <tr><td>Settings (auto-lock, display choices, last backup date)</td><td>The app's private storage on your iPhone</td><td>Remembering your preferences</td></tr>
+        </tbody>
+      </table>
+      <p>None of this is sent to us or to anyone else. Like any app's data, the app's private storage may be included in your iPhone's own iCloud or computer backup if you have that turned on. Those backups are governed by Apple's terms and your settings. Keychain items marked “this device only” are not moved to another device through those backups.</p>
+
+      <h2 id="permissions">3. Device permissions</h2>
+      <p>The app asks for these permissions only when you use the related feature, and you can change them at any time in iOS Settings:</p>
+      <ul>
+        <li><strong>Camera</strong>: to scan cards and documents. Images are processed and kept on your device.</li>
+        <li><strong>Photo Library</strong>: to import a picture of a card you already have. Only the photos you pick are read.</li>
+        <li><strong>Face ID</strong>: to unlock the app. Apple handles Face ID, and the app never receives your face data. It only learns whether the check succeeded.</li>
+      </ul>
+
+      <h2 id="sharing">4. Sharing and backups you start</h2>
+      <p>The app doesn't share anything on its own. When <em>you</em> choose to share, it uses the standard iOS share sheet, print dialog or an on-screen QR code to send the fields or files you selected. Once you send something to another app, person or printer, that recipient's privacy practices apply. Fields marked as secret, like a CVV, are unticked by default.</p>
+      <p>When you tap <strong>Back up now</strong>, the app creates a single file encrypted with AES-256-GCM under a key derived from your recovery key, and you choose where to save it (Files, iCloud Drive, AirDrop, a computer, and so on). Nobody can open that file without your recovery key, including us.</p>
+      <p>Copied values go to the iOS clipboard as local-only, so they don't sync to your other devices through Universal Clipboard, and by default they clear automatically after 60 seconds. You can change this in Settings.</p>
+
+      <h2 id="security">5. Security</h2>
+      <p>Measures built into the app include an optional Face ID or PIN lock with auto-lock, Keychain storage restricted to this device, encrypted backups, blurring the app in the app switcher, and clipboard entries that expire. No method of storage is perfectly secure. Your data's safety also depends on your device passcode, keeping iOS up to date, and keeping your recovery key private.</p>
+
+      <h2 id="retention">6. Retention and deletion</h2>
+      <p>Your data stays on your device until you delete it. You can delete individual items or people in the app. Deleting the app removes its private storage from your device. iOS may keep the app's Keychain entries (your PIN hash and recovery key) after the app is deleted. Other apps can't read them, and they're replaced if you set up Slomo again. Backup files you saved elsewhere stay wherever you put them until you delete them.</p>
+
+      <h2 id="children">7. Children's privacy</h2>
+      <p>The app collects no information from anyone, including children. Parents or guardians may use it to keep their children's documents. Those records stay on the parent's device like any other item.</p>
+
+      <h2 id="rights">8. Your rights</h2>
+      <p>Depending on where you live, laws such as India's Digital Personal Data Protection Act 2023, the EU/UK GDPR or the California Consumer Privacy Act give you rights to access, correct, delete or move your personal data. Because we hold none of your data, you exercise these rights directly in the app. You can view, edit, delete and export (through encrypted backup or sharing) everything at any time. If you have a question about your rights, contact us using the details below.</p>
+
+      <h2 id="website">9. This website</h2>
+      <p>This website (slomo.dev) is a static site hosted on Vercel. It sets no cookies and runs no analytics. Vercel, as the host, may log technical information such as your IP address for security and operations, under the <a href="https://vercel.com/legal/privacy-policy" rel="noopener">Vercel Privacy Policy</a>. The site loads fonts from Google Fonts, which receives your IP address when you visit, under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>. Your light or dark theme choice is saved in your own browser only.</p>
+
+      <h2 id="changes">10. Changes to this policy</h2>
+      <p>If we change this policy, we'll update this page and the effective date above. If a change would let any data leave your device without your action, we'll ask for your clear consent in the app before it takes effect.</p>
+
+      <h2 id="contact">11. Contact</h2>
+      <p>Slomo is developed by Neel Bhatt. For privacy questions or requests, email <a href="mailto:support@slomo.dev">support@slomo.dev</a>. For anything else, write to <a href="mailto:hello@slomo.dev">hello@slomo.dev</a>. Please don't include any document numbers or personal details in your message.</p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="22" height="22">Slomo</a>
+      <p style="margin:18px 0 0">© <span data-year>2026</span> Neel Bhatt</p>
+    </div>
+    <div class="foot-links">
+      <div><h4>Product</h4><a href="./#scan">Features</a><a href="./#faq">FAQ</a></div>
+      <div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+      <div><h4>Contact</h4><a href="mailto:hello@slomo.dev">hello@slomo.dev</a><a href="mailto:support@slomo.dev">support@slomo.dev</a></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
