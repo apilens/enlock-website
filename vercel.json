@@ -5,8 +5,8 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "slomo.dev" }], "destination": "https://enlock.app/:path*", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.slomo.dev" }], "destination": "https://enlock.app/:path*", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.enlock.app" }], "destination": "https://enlock.app/:path*", "permanent": true }
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "slomo.dev" }], "destination": "https://enlock.app/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "www.slomo.dev" }], "destination": "https://enlock.app/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "www.enlock.app" }], "destination": "https://enlock.app/$1", "permanent": true }
   ]
 }
