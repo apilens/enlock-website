@@ -1,8 +1,8 @@
-# Slomo — website
+# Enlock — website
 
-Landing page, Privacy Policy and Terms & Conditions for **Slomo**, the offline iPhone vault for ID cards and documents.
+Landing page, Privacy Policy and Terms & Conditions for **Enlock**, the offline iPhone vault for ID cards and documents.
 
-Live: https://slomo.dev
+Live: https://enlock.app
 
 | Page | File |
 |---|---|
@@ -20,9 +20,9 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Hosted on Vercel at slomo.dev as a static site (no build step, see `vercel.json`). A copy also deploys to GitHub Pages on every push to `main`.
+Hosted on Vercel at enlock.app as a static site (no build step, see `vercel.json`). A copy also deploys to GitHub Pages on every push to `main`.
 
-Contact: hello@slomo.dev (general), support@slomo.dev (support and privacy).
+Contact: hello@enlock.app (general), support@enlock.app (support and privacy).
 
 ## Before the App Store launch
 

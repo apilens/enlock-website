@@ -1,6 +1,6 @@
 (() => {
   const root = document.documentElement;
-  const save = v => { try { localStorage.setItem('slomo-theme', v); } catch {} };
+  const save = v => { try { localStorage.setItem('enlock-theme', v); } catch {} };
 
   // Dark is the default; the button flips between dark and light.
   document.querySelector('.theme-btn')?.addEventListener('click', () => {
