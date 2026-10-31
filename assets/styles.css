@@ -9,6 +9,7 @@
   --tx: #F7F8F8;
   --t2: #8A8F98;
   --t3: #5C6068;
+  --brand: #7DA2FF;
   --btn-bg: #F7F8F8;
   --btn-tx: #08090A;
   --card-1: #1E1F22; --card-2: #26272B; --card-3: #2E2F33; --card-tx: #E6E7E9;
@@ -27,6 +28,7 @@
   --tx: #08090A;
   --t2: #6B6F76;
   --t3: #9A9DA3;
+  --brand: #2453D6;
   --btn-bg: #08090A;
   --btn-tx: #FFFFFF;
   --card-1: #2A2B2F; --card-2: #34353A; --card-3: #3E3F44; --card-tx: #F2F2F3;
@@ -53,6 +55,9 @@ a { color: inherit; text-decoration: none; }
 .nav { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 590; font-size: 17px; letter-spacing: -.02em; }
+/* Wordmark: lowercase, the n in the one brand colour */
+.wm { font-weight: 590; letter-spacing: -.03em; }
+.wm b { color: var(--brand); font-weight: inherit; }
 .brand img, .brand svg { width: 22px; height: 22px; }
 .nav-links { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--t2); }
 .nav-links a { padding: 6px 12px; border-radius: 999px; transition: color .15s; }
@@ -310,3 +315,5 @@ footer { border-top: 1px solid var(--line); padding: 56px 0 64px; font-size: 13p
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+:root[data-theme="light"] .brand img { content: url("icon-dark.svg"); }
